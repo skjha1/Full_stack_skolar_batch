@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 16px; /* Base font size */ 
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            font-size: 1.5em; /* 1.5 * 16px = 24px */
+            margin: 2em;    /* 1.5 * 24px = 48px */
+            padding: 1em;    /* 1 * 24px = 24px */
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .header{
+            font-size: 1.2em; /* 1.5 * 24px = 28.8px */
+            margin: 0 0 1em 0;    /* 1 * 24px = 24px */
+            padding: 0.5em;    /* 0.5 * 28.8 = 14.4px */
+            background-color: #6fa3ef;
+            color: white;
+        }
+
+        .main {
+            font-size: 1em; /* 1 * 24px = 24px */
+            margin: 1em 0;    /* 1 * 24px = 24px */
+            padding: 1em;    /* 1 * 24px = 24pxpx */
+            background-color: #6fa3ef;
+            color: white;
+        }
+
+         .article {
+            font-size: 1.5em; /* 1 * 24px = 36px */
+            margin: 0.5em 0;    /* 0.5 * 24px = 12px */
+            padding: 1em;    /* 1 * 36px = 36px */
+            background-color: #82e0aa;
+            color: white;
+        }
+        .aside {
+            font-size: 0.8em;  /* 0.8 * 24px = 19.2px */
+            margin: 1em 0; /* 1em = 24px */
+            padding: 1em; /* 1 * 19.2 = 19.2px */ 
+            background-color: #ffdb4d;
+            color: black;
+        }
+        .footer {
+            font-size: 0.75em ; /* 0.75 * 24px = 18px */
+            margin: 2em 0 0 0; /* 2em top margin = 48px */
+            padding: 1em;  /* 1 * 18px = 18px */
+            background-color: #bfc9ca;
+        }
+        .nested {
+            font-size: 2em; /* 2 * 36px = 72 px  */
+            margin: 1em; /* 1em = 36px*/
+            padding: 0.5em; /* 0.5em = 36px*/
+            background-color: #d4e6f1;
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">This is a header (28.8px)</div>
+    <div class="main">
+        This is the main content(24 px)
+        <div class="article">
+            This is an article (36px)
+            <div class="nested">
+                This is a nested element inside the article (72px)
+            </div>
+        </div>
+        <div class="aside">This is a aside (19.2px)</div>
+    </div>
+    <div class="footer"> This is the footer (18px)</div>
+    </div>
+
+</body>
+</html>
