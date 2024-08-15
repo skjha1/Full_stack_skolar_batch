@@ -14,7 +14,7 @@
 ```
 
 
-### CSS
+### js
 
 ```js
 var str = "Hello"; // String
