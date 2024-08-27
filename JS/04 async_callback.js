@@ -42,3 +42,22 @@
 // }, 2000);
 
 // console.log("End");
+
+
+
+// Function that simulates the placing an order
+function placeOrder(order, callback) {
+    console.log(`order is placed ${order}`);
+    setTimeout(() => {
+        console.log(`Order is ready: ${order}`);
+        callback(); // Call the callback fxn after the order is ready
+    }, 3000); // Simulates a 3-sec delay 
+}
+
+// Function that will be called back 
+function collectOrder() {
+    console.log("collecting the order.")
+}
+
+// Placing an order and passing collectorder as a callback 
+placeOrder("Pizza", collectOrder)
