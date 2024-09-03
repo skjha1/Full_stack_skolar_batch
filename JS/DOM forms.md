@@ -136,7 +136,17 @@ document.getElementById("contactForm").addEventListener('submit', function(event
 
     // clear the form fileds
 
-    document.getElementById("contactForm").reset();
+    // document.getElementById("contactForm").reset();
+    
+    document.getElementById("name").value = '';
+    document.getElementById("email").value = '';
+    document.getElementById("message").value ='';
+
+    // document.querySelectorAll(#contactForm input, ).forEach(element) {
+    //     element.value = "";
+    // }
+
+})
 
 
 })
